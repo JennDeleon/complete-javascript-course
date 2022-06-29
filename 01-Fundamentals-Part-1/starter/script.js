@@ -33,4 +33,13 @@ lessThanAverage(population);
 let description = `Portugal is in Europe, 
 and its 11 million people speak portuguese`
 
-console.log(description)
+console.log(description);
+
+console.log("Jonas");  //not defined
+console.log(23);
+
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
+
+javascriptIsFun = "YES!";
+console.log(javascriptIsFun);
