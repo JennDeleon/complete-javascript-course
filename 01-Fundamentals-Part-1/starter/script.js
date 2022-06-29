@@ -30,6 +30,47 @@ function lessThanAverage(population) {
 }
 lessThanAverage(population);
 
+console.log("Jonas");
+console.log(23);
+
+let firstName = "Matilda";
+
+console.log(firstName);
+console.log(firstName);
+console.log(firstName);
+
+// Variable name conventions
+let jonas_matilda = "JM";
+let $function = 27;
+
+let person = "jonas";
+let PI = 3.1415;
+
+let myFirstJob = "Coder";
+let myCurrentJob = "Teacher";
+
+let job1 = "programmer";
+let job2 = "teacher";
+
+console.log(myFirstJob);
+console.log(job1);
+console.log(myCurrentJob);
+
+
+// Math operators
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
+
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+// 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
+
+let firstName = 'Jonas';
+const lastName = 'Schmedtmann';
+console.log(firstName + ' ' + lastName);
+
+
 let description = `Portugal is in Europe, 
 and its 11 million people speak portuguese`
 
@@ -43,3 +84,4 @@ console.log(javascriptIsFun);
 
 javascriptIsFun = "YES!";
 console.log(javascriptIsFun);
+
