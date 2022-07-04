@@ -113,3 +113,18 @@ let occupation = "unemployed";
 const me = `My name is ${name} and I'm ${age},
 ${occupation}!`
 console.log(me);
+
+//conditionals
+
+function oldEnoughToDrive(age) {
+    if (age >= 16) {
+        return console.log("You are old enough to start driving!");
+    } else {
+        return console.log("Sorry you're not old enough to start driving!")
+    }
+}
+
+oldEnoughToDrive(8);
+oldEnoughToDrive(15);
+oldEnoughToDrive(16);
+oldEnoughToDrive(17);
