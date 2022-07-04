@@ -98,12 +98,11 @@ let markWeight = 78;
 let johnHeight = 1.95;
 let johnWeight = 92;
 
-function totalBMI (weight, height){
-    return (weight / height ** 2).toFixed(2) + "%";
-}
-
-console.log(totalBMI(markWeight, markHeight)); //CORRECT!!
-console.log(totalBMI(johnWeight, johnHeight)); // CORRECT!!
+// function totalBMI (weight, height){
+//     return (weight / height ** 2).toFixed(2) + "%";
+// }
+// console.log(totalBMI(markWeight, markHeight)); //CORRECT!!
+// console.log(totalBMI(johnWeight, johnHeight)); // CORRECT!!
 
 // template literals
 const name = "Jenn";
@@ -128,3 +127,22 @@ oldEnoughToDrive(8);
 oldEnoughToDrive(15);
 oldEnoughToDrive(16);
 oldEnoughToDrive(17);
+
+
+// Coding Challenge #2
+// Use the BMI example from Challenge #1, and the code you already wrote, and
+// improve it.
+
+const johnBMI = (johnWeight / johnHeight ** 2).toFixed(2) + "%";
+const markBMI = (markWeight / markHeight ** 2).toFixed(2) + "%";
+
+
+function johnAndMarcsBMI (a, b){
+    if (markBMI > johnBMI){
+        console.log(`Marks BMI (${markBMI}) has a higher BMI!`)
+    } else {
+        console.log(`John's BMI ${johnBMI} a higher BMI!`)
+    }
+}
+johnAndMarcsBMI();
+
