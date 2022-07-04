@@ -146,3 +146,127 @@ function johnAndMarcsBMI (a, b){
 }
 johnAndMarcsBMI();
 
+// TYPE CONVERSION AND TYPE COERCION
+
+// TYPE CONVERSION WHEN YOU WANT TO CONVERT FROM ONE TYPE TO ANOTHER
+
+const inputYear = '1988';
+//  changing string to a number
+console.log(typeof inputYear);
+console.log(typeof(Number(inputYear)));
+
+const stringYear = 1988;
+//changing Number to String
+console.log(typeof stringYear);
+console.log(typeof(String(stringYear)));
+
+// Coding Challenge #3
+// There are two gymnastics teams, Dolphins and Koalas. They compete against each
+// other 3 times. The winner with the highest average score wins a trophy!
+
+// Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+// § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+
+// 1. Calculate the average score for each team, using the test data below
+
+function average (a, b, c){
+   return(a +b + c) / 3
+}
+
+console.log("Dolphins' score average: " + average(96, 108, 89).toFixed(0));
+const dolphins = 98;
+console.log("Koala's score average: " + average(109, 95, 123).toFixed(0));
+const koalas = 109;
+
+// 2. Compare the team's average scores to determine the winner of the competition,
+// and print it to the console. Don't forget that there can be a draw, so test for that
+// as well (draw means they have the same average score)
+
+function theWinnerIs (dolphins, koalas) {
+    if (dolphins > koalas) {
+        console.log("Dolphins' win!")
+    } else if(koalas > dolphins){
+        console.log("Koala's win!")
+    } else if (koalas === dolphins){
+        console.log("Its a tie!")
+    }
+}
+
+theWinnerIs(dolphins, koalas);
+
+
+//SWITCH STATEMENTS
+
+
+const day = "Tuesday";
+switch (day) {
+    case 'Monday':
+        console.log("Practice JS");
+        console.log("Watch Alex");
+        break;
+    case 'Tuesday':
+        console.log("Interview!");
+}
+
+if (day === 'monday') {
+    console.log("Practice JS");
+    console.log("Watch Alex");
+} else if (day === 'tuesday') {
+    console.log("Interview!");
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log('Write code examples');
+} else if (day === 'friday') {
+    console.log('Record videos');
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('Enjoy the weekend :D');
+} else {
+    console.log('Not a valid day!');
+}
+
+// Statements and Expressions
+3 + 4
+1991
+true && false && !false
+
+if (23 > 10) {
+    const str = '23 is bigger';
+}
+
+const you = 'Jonas';
+console.log(`I'm ${2037 - 1991} years old ${you}`);
+
+// The Conditional (Ternary) Operator
+const newAge = 23;
+// newAge >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
+
+const drink = newAge >= 18 ? 'wine 🍷' : 'water 💧';
+console.log(drink);
+
+let drink2;
+if (newAge >= 18) {
+    drink2 = 'wine 🍷';
+} else {
+    drink2 = 'water 💧';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${newAge >= 18 ? 'wine 🍷' : 'water 💧'}`);
+
+// Coding Challenge #4
+
+// § Data 1: Test for bill values 275, 40 and 430
+
+// Steven wants to build a very simple tip calculator for whenever he goes eating in a
+// restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and
+// 300. If the value is different, the tip is 20%.
+
+
+// const bill = 275;
+// const bill = 40;
+const bill = 430;
+
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+// const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
