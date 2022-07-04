@@ -1,6 +1,6 @@
-let js = "amazing";
-if (js === "amazing") alert("Ok its working");
-console.log(40 + 8 + 23 - 10);
+// let js = "amazing";
+// if (js === "amazing") alert("Ok its working");
+// console.log(40 + 8 + 23 - 10);
 
 const country = "USA";
 const continent = "North America";
@@ -104,3 +104,12 @@ function totalBMI (weight, height){
 
 console.log(totalBMI(markWeight, markHeight)); //CORRECT!!
 console.log(totalBMI(johnWeight, johnHeight)); // CORRECT!!
+
+// template literals
+const name = "Jenn";
+let age = "34";
+let occupation = "unemployed";
+
+const me = `My name is ${name} and I'm ${age},
+${occupation}!`
+console.log(me);
