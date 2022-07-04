@@ -65,10 +65,10 @@ console.log(ageJonas, ageSarah);
 
 console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 // 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
-
-let firstName = 'Jonas';
-const lastName = 'Schmedtmann';
-console.log(firstName + ' ' + lastName);
+//
+// let firstName = 'Jonas';
+// const lastName = 'Schmedtmann';
+// console.log(firstName + ' ' + lastName);
 
 
 let description = `Portugal is in Europe, 
@@ -85,3 +85,22 @@ console.log(javascriptIsFun);
 javascriptIsFun = "YES!";
 console.log(javascriptIsFun);
 
+
+
+// Mark and John are trying to compare their BMI (Body Mass Index),
+
+// BMI = mass / height **2
+//  OR
+// mass = height * height
+
+let markHeight = 1.69;
+let markWeight = 78;
+let johnHeight = 1.95;
+let johnWeight = 92;
+
+function totalBMI (weight, height){
+    return (weight / height ** 2).toFixed(2) + "%";
+}
+
+console.log(totalBMI(markWeight, markHeight)); //CORRECT!!
+console.log(totalBMI(johnWeight, johnHeight)); // CORRECT!!
