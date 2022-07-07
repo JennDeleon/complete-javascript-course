@@ -182,17 +182,17 @@ const koalas = 109;
 // and print it to the console. Don't forget that there can be a draw, so test for that
 // as well (draw means they have the same average score)
 
-function theWinnerIs (dolphins, koalas) {
-    if (dolphins > koalas) {
-        console.log("Dolphins' win!")
-    } else if(koalas > dolphins){
-        console.log("Koala's win!")
-    } else if (koalas === dolphins){
-        console.log("Its a tie!")
-    }
-}
-
-theWinnerIs(dolphins, koalas);
+// function theWinnerIs (dolphins, koalas) {
+//     if (dolphins > koalas) {
+//         console.log("Dolphins' win!")
+//     } else if(koalas > dolphins){
+//         console.log("Koala's win!")
+//     } else if (koalas === dolphins){
+//         console.log("Its a tie!")
+//     }
+// }
+//
+// theWinnerIs(dolphins, koalas);
 
 
 //SWITCH STATEMENTS
